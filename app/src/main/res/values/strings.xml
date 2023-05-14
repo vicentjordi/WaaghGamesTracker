@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">WaaghGamesTracker</string>
+    <string name="prefs_file">com.vicentjordi.waaghgamestracker.PREFERENCE_FILE_KEY</string>
+
+    <!-- Strings relacionadas con el logIn/signUp menu-->
+    <string name="menuInico">Inico</string>
+    <string name="menuListas">Listas de ejercitos</string>
+    <string name="menuPartidas">Reporte de Batalla</string>
+    <string name="menuSalir">Salir</string>
+
+    <!-- Strings relacionadas con el logIn/signUp menu-->
+    <string name="btnLogin">Log In</string>
+    <string name="btnRegister">Sing Up</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtContrasenya">Contraseña</string>
+    <string name="TxtRepetirContrasenya">Repite la contraseña</string>
+    <string name="txtOlvidarContrasenya">Olvidaste la contraseña?</string>
+    <string name="txtO">O</string>
+
+    <!-- Strings relacionadas con el menu lateral -->
+    <string name="abrir">Abrir Nav Drawer</string>
+    <string name="cerrar">Cerrar Nav Drawer</string>
+
+    <!-- Fragment Inicio -->
+    <string name="Incio">Inicio</string>
+    <string name="Bienvenido">Bienvenido a WaaghGames: Tracker</string>
+    <string name="lblListas">Tus Listas mas Recientes</string>
+    <string name="btnVerListas">Ver Listas</string>
+    <string name="lblPartidas">Informes de Batalla</string>
+    <string name="btnVerPartidas">Ver Informes</string>
+
+    <!-- Fragment Listas -->
+    <string name="TusListas">Tus Listas</string>
+    <string name="txtFiltrarListas">Filtrar Listas por:</string>
+
+    <!-- Activity Crear Listas -->
+    <string name="CrearLista">Listas</string>
+    <string name="NombreLista">Nombre de la Lista</string>
+
+    <!-- Fragment Partidas -->
+    <string name="Partidas">Tus Informes de Batalla</string>
+
+    <!-- Strings relacionadas con mensajesError -->
+    <string name="camposVacios">Algún campo está vacío.</string>
+    <string name="errorRegistro">Ha ocurrido un error al registrar el Usuario.</string>
+    <string name="errorLogin">El correo o la contraseña introducida es incorrecta.</string>
+    <string name="usuarioExiste">El correo ya existe.</string>
+    <string name="contrasenyaDiferente">Las contraseñas no coinciden.</string>
+    <string name="contrasenyaCorta">La contraseña es muy Corta. Debe tener 6 caracteres mínimo.</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "889863207268",
+    "project_id": "waaghgamestracker",
+    "storage_bucket": "waaghgamestracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889863207268:android:ddb7287d04a3dd413be271",
+        "android_client_info": {
+          "package_name": "com.vicentjordi.waaghgamestracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889863207268-h1k1d20ausisftkr2jjkdv48ldrkt9jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMr2UzpQRgYYzKUz7pQknp7-NziN9z6zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889863207268-h1k1d20ausisftkr2jjkdv48ldrkt9jj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

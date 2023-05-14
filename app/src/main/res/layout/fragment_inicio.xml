@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgorundApp"
+    tools:context=".Inicio.InicioFragment">
+
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="start"
+        android:gravity="center_vertical"
+        android:text="@string/Bienvenido"
+        android:textStyle="bold"
+        android:textColor="#E9D4A1"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1D2026">
+
+        <LinearLayout
+            android:background="@color/backgorundApp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:text="@string/lblListas"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#E9D4A1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ListasMinis"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:text="@string/btnVerListas"
+                android:textColor="#f59e0b"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvListasInico"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/backgorundApp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:text="@string/lblPartidas"
+                android:textColor="@color/titulos"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/PartidasHechasIncio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:text="@string/btnVerPartidas"
+                android:textColor="@color/botones"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPartidasinico"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

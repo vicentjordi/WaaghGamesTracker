@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background -->
+    <color name="backgorundApp">#2B2E34</color>
+    <color name="backgorund">#1B1B1B </color>
+
+    <!-- Botones -->
+    <color name="botones">#f59e0b </color>
+    <color name="fondoBotones">#4B0082 </color>
+
+    <!-- Texto -->
+    <color name="titulos">#E9D4A1 </color>
+    <color name="texto">#BDBDBD </color>
+    <color name="textoSecundario">#757575 </color>
+
+    <!-- Otros -->
+    <color name="colorTransparente">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

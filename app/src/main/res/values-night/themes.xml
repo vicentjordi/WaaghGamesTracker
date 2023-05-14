@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WaaghGamesTracker" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/backgorundApp</item>
+        <item name="colorPrimaryVariant">@color/textoSecundario</item>
+        <item name="colorOnPrimary">@color/texto</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/botones</item>
+        <item name="colorSecondaryVariant">@color/titulos</item>
+        <item name="colorOnSecondary">@color/textoSecundario</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
