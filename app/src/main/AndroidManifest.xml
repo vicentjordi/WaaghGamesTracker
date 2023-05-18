@@ -12,6 +12,9 @@
         android:theme="@style/Theme.WaaghGamesTracker"
         tools:targetApi="31">
         <activity
+            android:name=".Partidas.CrearPartidaActivity"
+            android:exported="false" />
+        <activity
             android:name=".Listas.CrearListaActivity"
             android:exported="false" />
         <activity

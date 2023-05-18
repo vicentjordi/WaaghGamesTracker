@@ -1,10 +1,12 @@
 package com.vicentjordi.waaghgamestracker.Partidas
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.vicentjordi.waaghgamestracker.Listas.CrearListaActivity
 import com.vicentjordi.waaghgamestracker.databinding.FragmentPartidasBinding
 
 class PartidasFragment : Fragment() {
@@ -25,6 +27,9 @@ class PartidasFragment : Fragment() {
     }
 
     private fun crearPartida(){
-
+        val context = activity
+        val crearPartidaIntent = Intent(context, CrearPartidaActivity::class.java)
+        startActivity(crearPartidaIntent)
     }
+
 }

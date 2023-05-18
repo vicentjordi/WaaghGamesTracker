@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgorundApp"
+    android:orientation="vertical">
+
+    <!-- Primer LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edNombreJ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/textoSecundario"
+            android:hint="Nombre Jugador 1" />
+
+        <EditText
+            android:id="@+id/edPuntosComandoJ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:textColor="@color/textoSecundario"
+            android:hint="CP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/botones"
+            android:text="Selecciona la faccion       >" />
+
+        <CheckBox
+            android:id="@+id/cbJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="35dp"
+            android:text="El ejecercito esta listo (10 puntos)" />
+
+    </LinearLayout>
+    <!-- Línea para dividir la pantalla en la mitad -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fondoBotones" />
+
+    <!-- Segundo LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edNombreJ2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/textoSecundario"
+            android:hint="Nombre Jugador 1" />
+
+        <EditText
+            android:id="@+id/edPuntosComandoJ2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:textColor="@color/textoSecundario"
+            android:hint="CP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/botones"
+            android:text="Selecciona la faccion       >" />
+
+        <CheckBox
+            android:id="@+id/cbJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="35dp"
+            android:text="El ejecercito esta listo (10 puntos)" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
