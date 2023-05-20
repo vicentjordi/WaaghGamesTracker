@@ -39,6 +39,11 @@
 
     <!-- Fragment Partidas -->
     <string name="Partidas">Tus Informes de Batalla</string>
+    <string name="nomJugador1">Jugador 1</string>
+    <string name="nomJugador2">Jugador 2</string>
+    <string name="Cp">CP</string>
+    <string name="faccion">Seleccionar la faccion ....</string>
+    <string name="pintado">El ejecercito esta listo (10 puntos)</string>
 
     <!-- Strings relacionadas con mensajesError -->
     <string name="camposVacios">Algún campo está vacío.</string>
@@ -47,6 +52,9 @@
     <string name="usuarioExiste">El correo ya existe.</string>
     <string name="contrasenyaDiferente">Las contraseñas no coinciden.</string>
     <string name="contrasenyaCorta">La contraseña es muy Corta. Debe tener 6 caracteres mínimo.</string>
+    <string name="errorFaccion">Algún jugador no ha escogido facción</string>
+    <string name="errorCP">Solo se admiten números como valores válidos en el campo "CP" </string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

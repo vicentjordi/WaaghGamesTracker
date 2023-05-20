@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.vicentjordi.waaghgamestracker.Listas.ListasFragment
+import com.vicentjordi.waaghgamestracker.Partidas.PartidasFragment
 import com.vicentjordi.waaghgamestracker.R
 import com.vicentjordi.waaghgamestracker.databinding.FragmentInicioBinding
 
@@ -25,6 +26,11 @@ class InicioFragment : Fragment() {
             cargarFragments(fragmentoListas)
         }
 
+        binding.PartidasHechasIncio.setOnClickListener {
+            val fragmentoPartida = PartidasFragment()
+            cargarFragments(fragmentoPartida)
+
+        }
 
         return binding.root
     }

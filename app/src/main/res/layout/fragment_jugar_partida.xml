@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgorundApp"
+    android:orientation="vertical"
+    tools:context="Partidas.JugarPartidaFragment">
+
+    <!-- Primer LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/J1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:hint="Jordi"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <!-- Primer LinearLayout (Alineado a la izquierda) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnRestarCPJ1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textColor="@color/botones"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+            <!-- Segundo LinearLayout (Alineado al centro) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/CPJ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/titulos"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CP"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/textoSecundario"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <!-- Tercer LinearLayout (Alineado a la derecha) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start">
+                <Button
+                    android:id="@+id/btnSumarCPJ1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textColor="@color/botones"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Primer LinearLayout (Alineado a la izquierda) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnRestarPJ1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textColor="@color/botones"
+                    android:textSize="45sp"/>
+
+            </LinearLayout>
+
+            <!-- Segundo LinearLayout (Alineado al centro) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/puntosJ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/titulos"
+                    android:textSize="45sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puntos"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/textoSecundario"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <!-- Tercer LinearLayout (Alineado a la derecha) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start">
+                <Button
+                    android:id="@+id/btnSumarPJ1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textColor="@color/botones"
+                    android:textSize="45sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Línea para dividir la pantalla en la mitad -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/titulos" />
+
+    <!-- Segundo LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/J2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:hint="Paco"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <!-- Primer LinearLayout (Alineado a la izquierda) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnRestarCPJ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textColor="@color/botones"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+            <!-- Segundo LinearLayout (Alineado al centro) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/CPJ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/titulos"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CP"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/textoSecundario"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <!-- Tercer LinearLayout (Alineado a la derecha) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start">
+                <Button
+                    android:id="@+id/btnSumarCPJ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textColor="@color/botones"
+                    android:textSize="30sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Primer LinearLayout (Alineado a la izquierda) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnRestarPJ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textColor="@color/botones"
+                    android:textSize="45sp"/>
+
+            </LinearLayout>
+
+            <!-- Segundo LinearLayout (Alineado al centro) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/puntosJ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/titulos"
+                    android:textSize="45sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puntos"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/textoSecundario"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <!-- Tercer LinearLayout (Alineado a la derecha) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start">
+                <Button
+                    android:id="@+id/btnSumarPJ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textColor="@color/botones"
+                    android:textSize="45sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTerminarpartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/fondoBotones"
+        android:clickable="true"
+        android:foregroundTint="@color/botones"
+        android:src="@android:drawable/ic_menu_save"
+        android:tint="@color/botones"/>
+</LinearLayout>
