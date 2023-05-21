@@ -8,10 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
-import androidx.fragment.app.FragmentManager
 import com.google.firebase.firestore.FirebaseFirestore
 import com.vicentjordi.waaghgamestracker.R
-import com.vicentjordi.waaghgamestracker.Utils.FaccionesFragment
 import com.vicentjordi.waaghgamestracker.databinding.FragmentJugarPartidaBinding
 
 class JugarPartidaFragment : Fragment() {
@@ -111,7 +109,6 @@ class JugarPartidaFragment : Fragment() {
             binding.puntosJ2.text = puntosJ2.toString()
         }
     }
-
     fun actualizarValor(textView: TextView, operacion: String) {
         val valorActual = textView.text.toString().toInt()
 
@@ -123,8 +120,6 @@ class JugarPartidaFragment : Fragment() {
 
         textView.text = nuevoValor.toString()
     }
-
-
     private fun cargarFragments(fragment: Fragment){
         val transaction = requireActivity().supportFragmentManager.beginTransaction()
         transaction.replace(R.id.contenedorPartidaFragments, fragment)

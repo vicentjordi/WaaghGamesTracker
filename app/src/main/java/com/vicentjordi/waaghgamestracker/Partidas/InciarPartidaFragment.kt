@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.vicentjordi.waaghgamestracker.R
 import com.vicentjordi.waaghgamestracker.Utils.FaccionesFragment
 import com.vicentjordi.waaghgamestracker.databinding.FragmentInciarPartidaBinding
