@@ -1,7 +1,9 @@
 package com.vicentjordi.waaghgamestracker.Partidas
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import com.vicentjordi.waaghgamestracker.Inicio.InicioFragment
 import com.vicentjordi.waaghgamestracker.R
@@ -23,4 +25,5 @@ class CrearPartidaActivity : AppCompatActivity() {
         val pm: FragmentManager = supportFragmentManager
         pm.beginTransaction().add(R.id.contenedorPartidaFragments,primerFragment).commit()
     }
+
 }

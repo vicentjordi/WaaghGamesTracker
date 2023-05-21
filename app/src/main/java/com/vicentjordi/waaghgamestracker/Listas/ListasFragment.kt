@@ -6,10 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.commit
-import com.vicentjordi.waaghgamestracker.HomeActivity
-import com.vicentjordi.waaghgamestracker.Inicio.InicioFragment
-import com.vicentjordi.waaghgamestracker.R
 import com.vicentjordi.waaghgamestracker.databinding.FragmentListasBinding
 
 class ListasFragment : Fragment() {

@@ -54,6 +54,7 @@
     <string name="contrasenyaCorta">La contraseña es muy Corta. Debe tener 6 caracteres mínimo.</string>
     <string name="errorFaccion">Algún jugador no ha escogido facción</string>
     <string name="errorCP">Solo se admiten números como valores válidos en el campo "CP" </string>
+    <string name="errorPartida">Este es un mensaje de error para la partida.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

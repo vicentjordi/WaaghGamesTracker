@@ -57,7 +57,7 @@ class HomeActivity : AppCompatActivity() {
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-        toggle.drawerArrowDrawable?.color = ContextCompat.getColor(this,R.color.white)
+        toggle.drawerArrowDrawable.color = ContextCompat.getColor(this,R.color.white)
 
         navigationView.setNavigationItemSelectedListener { menuItem ->
             when(menuItem.itemId){

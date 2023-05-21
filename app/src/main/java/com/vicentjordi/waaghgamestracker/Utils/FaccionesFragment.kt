@@ -1,5 +1,6 @@
 package com.vicentjordi.waaghgamestracker.Utils
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,7 +34,7 @@ class FaccionesFragment : Fragment() {
 
     private fun crearListaFaccion(): MutableList<Facciones> {
         val faccion: MutableList<Facciones> = arrayListOf()
-
+        faccion.add(Facciones("Necrones", R.drawable.necrons))
         return faccion
     }
 
