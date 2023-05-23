@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/backgorundApp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/txtNombreLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre lista"
+            android:textColor="@color/titulos"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/txtFaccionLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="faccion"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/titulos"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|bottom">
+
+        <TextView
+            android:id="@+id/txtPuntosLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/titulos"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="2000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="puntos"
+            android:textColor="@color/titulos"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

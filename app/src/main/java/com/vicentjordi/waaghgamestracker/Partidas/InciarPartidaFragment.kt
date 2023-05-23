@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.firestore.FirebaseFirestore
+import com.vicentjordi.waaghgamestracker.Adapters.AdapterResultadoPartida
 import com.vicentjordi.waaghgamestracker.R
 import com.vicentjordi.waaghgamestracker.Utils.FaccionesFragment
 import com.vicentjordi.waaghgamestracker.databinding.FragmentInciarPartidaBinding
@@ -14,6 +16,7 @@ import com.vicentjordi.waaghgamestracker.databinding.FragmentInciarPartidaBindin
 class InciarPartidaFragment : Fragment() {
     private var _binding: FragmentInciarPartidaBinding? = null
     private val binding get() = _binding!!
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
