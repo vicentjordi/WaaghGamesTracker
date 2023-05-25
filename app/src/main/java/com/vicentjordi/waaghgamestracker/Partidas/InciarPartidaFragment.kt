@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
+import com.vicentjordi.waaghgamestracker.Adapters.AdapterFaccion
 import com.vicentjordi.waaghgamestracker.Adapters.AdapterResultadoPartida
 import com.vicentjordi.waaghgamestracker.R
 import com.vicentjordi.waaghgamestracker.Utils.FaccionesFragment
@@ -26,6 +27,7 @@ class InciarPartidaFragment : Fragment() {
 
         binding.faccionJ1.setOnClickListener {
             val fragmentFaccion = FaccionesFragment()
+
             cargarFragments(fragmentFaccion)
         }
 
