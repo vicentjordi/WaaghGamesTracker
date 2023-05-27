@@ -38,7 +38,6 @@ class PartidasFragment : Fragment() {
         return binding.root
     }
 
-
     private fun crearListaResultado(): MutableList<ResultadoPartida> {
         val partida: MutableList<ResultadoPartida> = mutableListOf()
 

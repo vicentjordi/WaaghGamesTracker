@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
@@ -14,9 +15,12 @@ import com.vicentjordi.waaghgamestracker.R
 import com.vicentjordi.waaghgamestracker.Utils.FaccionesFragment
 import com.vicentjordi.waaghgamestracker.databinding.FragmentInciarPartidaBinding
 
-class InciarPartidaFragment : Fragment() {
+class InciarPartidaFragment : Fragment(), FaccionesFragment.seleccionarFaccion{
     private var _binding: FragmentInciarPartidaBinding? = null
     private val binding get() = _binding!!
+    private var faccionSeleccionadaPor: Int = 0
+    private var faccion: String? = null
+    private var faccion2: String? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,13 +30,16 @@ class InciarPartidaFragment : Fragment() {
         _binding = FragmentInciarPartidaBinding.inflate(inflater, container, false)
 
         binding.faccionJ1.setOnClickListener {
+            faccionSeleccionadaPor = 1
             val fragmentFaccion = FaccionesFragment()
-
+            fragmentFaccion.setFaccionClickListener(this@InciarPartidaFragment)
             cargarFragments(fragmentFaccion)
         }
 
         binding.faccionJ2.setOnClickListener {
+            faccionSeleccionadaPor = 2
             val fragmentFaccion = FaccionesFragment()
+            fragmentFaccion.setFaccionClickListener(this@InciarPartidaFragment)
             cargarFragments(fragmentFaccion)
         }
 
@@ -161,4 +168,36 @@ class InciarPartidaFragment : Fragment() {
             R.string.errorFaccion,
             Toast.LENGTH_SHORT).show()
     }
+    override fun devolverFaccion(faccionSeleccionada: String) {
+        //Asegura que se realize la actualizacion del textView en el hilo Principal.
+        requireActivity().runOnUiThread{
+            if (faccionSeleccionadaPor == 1)
+                faccion = faccionSeleccionada
+            else if (faccionSeleccionadaPor == 2)
+                faccion2 = faccionSeleccionada
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        when (faccionSeleccionadaPor) {
+            1 -> {
+                binding.faccionJ1.text = faccion
+                if (faccion2 == null){
+                    binding.faccionJ2.text = getText(R.string.faccion)
+                }else{
+                    binding.faccionJ2.text = faccion2
+                }
+            }
+            2 -> {
+                if (faccion == null){
+                    binding.faccionJ1.text = getText(R.string.faccion)
+                }else{
+                    binding.faccionJ1.text = faccion
+                }
+                binding.faccionJ2.text = faccion2
+            }
+        }
+    }
+
 }

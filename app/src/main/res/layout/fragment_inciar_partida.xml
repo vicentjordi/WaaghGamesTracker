@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/backgorundApp"
     android:orientation="vertical">
 
@@ -38,11 +37,12 @@
             android:id="@+id/faccionJ1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginStart="35dp"
-            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/faccion"
             android:textColor="@color/botones"
-            android:text="@string/faccion" />
+            android:textStyle="bold" />
 
         <CheckBox
             android:id="@+id/cbJ1"
@@ -89,6 +89,7 @@
 
         <TextView
             android:id="@+id/faccionJ2"
+            android:foreground="?attr/selectableItemBackground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"

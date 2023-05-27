@@ -255,13 +255,7 @@
                     android:id="@+id/googleBoto"
                     android:src="@drawable/ic_google"
                     android:layout_margin="10dp"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"/>
-                <ImageView
-                    android:id="@+id/redditBoto"
-                    android:src="@drawable/ic_reddit"
-                    android:layout_margin="10dp"
-                    android:layout_width="35dp"
+                    android:layout_width="40dp"
                     android:layout_height="35dp"/>
 
             </LinearLayout>

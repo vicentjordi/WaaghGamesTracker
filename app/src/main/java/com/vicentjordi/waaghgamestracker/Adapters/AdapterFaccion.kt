@@ -15,7 +15,6 @@ class AdapterFaccion : RecyclerView.Adapter<AdapterFaccion.ViewHolder>() {
     lateinit var context: Context
     private lateinit var miListener: onItemClickListener
 
-
     interface onItemClickListener{
         fun onItemClick(position: Int)
     }

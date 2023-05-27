@@ -56,6 +56,37 @@
     <string name="errorCP">Solo se admiten números como valores válidos en el campo "CP" </string>
     <string name="errorPartida">Este es un mensaje de error para la partida.</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Facciones -->
+    <string name="templarios">Templarios Negros</string>
+    <string name="sangrientos">Ángeles Sangrientos</string>
+    <string name="oscuros">Ángeles Osucuros</string>
+    <string name="vigias">Vigías de la Muerte</string>
+    <string name="caballeros">Caballeros Grises</string>
+    <string name="punyos">Puños Imperiales</string>
+    <string name="manos">Manos de Hierro</string>
+    <string name="guardia">Guardia del Cuervo</string>
+    <string name="salamandras">Salamandras</string>
+    <string name="lobos">Lobos Espaciales</string>
+    <string name="ultramarines">Ultramarines</string>
+    <string name="cicatrices">Cicatrices Blancas</string>
+    <string name="sororitas">Adeptas Sororitas</string>
+    <string name="custodes">Adeptus Custodes</string>
+    <string name="mechanicus">Adeptus Mechanicus</string>
+    <string name="militarum">Astra Militarum</string>
+    <string name="imperiales">Caballeros Imperiales</string>
+    <string name="inquisidores">Inquisidores</string>
+    <string name="assassinorum">Officio Assassinorum</string>
+    <string name="demonios">Demonios del Caos</string>
+    <string name="caos">Caballeros Imperiales del Caos</string>
+    <string name="marinesCaos">Marines del Caos</string>
+    <string name="guardiaMuerte">Guardia de la Muerte</string>
+    <string name="milHijos">Mil Hijos</string>
+    <string name="devoradores">Devoradores de Mundos</string>
+    <string name="aeldar">Aeldari</string>
+    <string name="drukhari">Drukhari</string>
+    <string name="genestealer">Cultos Genestealer</string>
+    <string name="tiranidos">Tiranidos</string>
+    <string name="necornes">Necrones</string>
+    <string name="tau">Imperio T au</string>
+    <string name="orcos">Orcos</string>
 </resources>
