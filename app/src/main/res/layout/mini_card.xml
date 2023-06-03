@@ -13,6 +13,7 @@
         android:gravity="start">
 
         <TextView
+            android:layout_marginTop="5sp"
             android:layout_marginStart="5dp"
             android:id="@+id/txtNombreMini"
             android:layout_width="wrap_content"
@@ -79,5 +80,9 @@
             android:layout_marginStart="8dp"/>
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/titulos" />
 
 </LinearLayout>

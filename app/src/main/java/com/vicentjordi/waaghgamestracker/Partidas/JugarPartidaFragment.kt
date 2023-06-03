@@ -49,7 +49,7 @@ class JugarPartidaFragment : Fragment() {
         }
 
         binding.btnRestarCPJ2.setOnClickListener {
-            actualizarValor(binding.CPJ1, "restar")
+            actualizarValor(binding.CPJ2, "restar")
         }
 
         binding.btnSumarCPJ2.setOnClickListener {

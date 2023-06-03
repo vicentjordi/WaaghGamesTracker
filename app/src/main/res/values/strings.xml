@@ -55,7 +55,7 @@
     <string name="errorFaccion">Algún jugador no ha escogido facción</string>
     <string name="errorCP">Solo se admiten números como valores válidos en el campo "CP" </string>
     <string name="errorPartida">Este es un mensaje de error para la partida.</string>
-    <string name="sinFaccion">Selecciona una faccion para poder buscar la mini</string>
+    <string name="sinFaccion">Selecciona una faccion para poder crear tu lista</string>
 
     <!-- Facciones -->
     <string name="templarios">Templarios Negros</string>

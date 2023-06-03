@@ -7,20 +7,33 @@
     android:background="@color/textoSecundario"
     android:orientation="vertical"
     android:gravity="bottom">
-    
-    <TextView
-        android:id="@+id/userNameMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:textSize="36dp"
-        android:textStyle="bold"/>
-    <TextView
-        android:id="@+id/userEmailMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="userEmail"
-        android:textSize="18dp"
-        />
-    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:padding="20dp"
+        android:background="@color/textoSecundario"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="344dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:rotation="-30"
+                android:text="Waaaaaagh!!"
+                android:textColor="@color/titulos"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
 </LinearLayout>

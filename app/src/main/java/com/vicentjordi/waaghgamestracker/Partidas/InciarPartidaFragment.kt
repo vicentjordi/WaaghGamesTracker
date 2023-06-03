@@ -184,14 +184,14 @@ class InciarPartidaFragment : Fragment(), FaccionesFragment.seleccionarFaccion{
             1 -> {
                 binding.faccionJ1.text = faccion
                 if (faccion2 == null){
-                    binding.faccionJ2.text = getText(R.string.faccion)
+                    binding.faccionJ2.text = "faccionJ1"
                 }else{
                     binding.faccionJ2.text = faccion2
                 }
             }
             2 -> {
                 if (faccion == null){
-                    binding.faccionJ1.text = getText(R.string.faccion)
+                    binding.faccionJ1.text = "faccionJ2"
                 }else{
                     binding.faccionJ1.text = faccion
                 }

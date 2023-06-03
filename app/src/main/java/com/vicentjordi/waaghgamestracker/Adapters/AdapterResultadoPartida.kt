@@ -12,6 +12,15 @@ import com.vicentjordi.waaghgamestracker.Utils.ResultadoPartida
 class AdapterResultadoPartida : RecyclerView.Adapter<AdapterResultadoPartida.ViewHolder>() {
     var partidas: MutableList<ResultadoPartida> = ArrayList()
     lateinit var context: Context
+    private lateinit var miListener: onItemClickListener
+
+    interface onItemClickListener {
+        fun onItemClick(position: Int, id: String, email: String)
+    }
+
+    fun setOnItemClickListener(listener: onItemClickListener) {
+        miListener = listener
+    }
 
     fun AdapterResultadoPartida(lista: MutableList<ResultadoPartida>, context: Context) {
         this.partidas = lista
@@ -32,14 +41,13 @@ class AdapterResultadoPartida : RecyclerView.Adapter<AdapterResultadoPartida.Vie
         return partidas.size
     }
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val nombreJ1 = view.findViewById(R.id.resnombreJ1) as TextView
         private val faccionJ1 = view.findViewById(R.id.resfaccionJ1) as TextView
         private val puntosJ1 = view.findViewById(R.id.respuntosJ1) as TextView
         private val nombreJ2 = view.findViewById(R.id.resnombreJ2) as TextView
         private val faccionJ2 = view.findViewById(R.id.resfaccionJ2) as TextView
         private val puntosJ2 = view.findViewById(R.id.respuntosJ2) as TextView
-
 
         fun bind(partida: ResultadoPartida, context: Context) {
             nombreJ1.text = partida.nombreJ1
@@ -49,6 +57,19 @@ class AdapterResultadoPartida : RecyclerView.Adapter<AdapterResultadoPartida.Vie
             nombreJ2.text = partida.nombreJ2
             faccionJ2.text = partida.faccionJ2
             puntosJ2.text = partida.puntosJ2
+
+            itemView.setOnLongClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    val id = partidas[position].id
+                    val email = partidas[position].email
+                    miListener.onItemClick(position, id, email)
+                    true
+                } else {
+                    false
+                }
+            }
         }
     }
 }
+

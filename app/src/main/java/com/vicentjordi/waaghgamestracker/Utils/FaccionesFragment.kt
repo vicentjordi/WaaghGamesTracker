@@ -25,7 +25,6 @@ class FaccionesFragment : Fragment() {
     interface seleccionarFaccion {
         fun devolverFaccion(faccionSeleccionada: String)
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
