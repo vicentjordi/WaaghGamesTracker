@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.WriteBatch
 import com.vicentjordi.waaghgamestracker.Adapters.AdapterResultadoPartida
 import com.vicentjordi.waaghgamestracker.Listas.ListasFragment
 import com.vicentjordi.waaghgamestracker.Partidas.PartidasFragment
@@ -36,7 +37,6 @@ class InicioFragment : Fragment() {
             cargarFragments(fragmentoPartida)
 
         }
-
         adaptadorRvPartida()
 
         return binding.root

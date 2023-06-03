@@ -80,6 +80,7 @@ class JugarPartidaFragment : Fragment() {
                 .addOnFailureListener { e ->
                     Toast.makeText(requireContext(), getString(R.string.errorPartida), Toast.LENGTH_SHORT).show()
                 }
+
         }
 
         return binding.root
